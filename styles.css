@@ -1,0 +1,480 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+a {
+    color: var(--link-color); 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+/*NAV BAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+}
+
+nav .left a {
+    color: var(--text-color); 
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color); 
+    margin: 0 10px;
+}
+
+
+nav .right a:last-child {
+    background-color: var(--text-color); 
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* Add subtle shadow to all right-side nav items, including dark mode toggle */
+nav .right a,
+#darkModeToggle {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+/*HERO*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2 {
+    font-size: 45px;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color)
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    width: 400px;
+    border-radius: 50%;
+}
+
+/*SECTION 2: Skills*/
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 140px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid  #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+}
+
+ /*SECTION 3: Testimony*/
+ .testimony-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 140px;
+}
+
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimony-section .group .person-details {
+    text-align: center;
+    flex: 2;
+}
+
+.testimony-section .group .person-details img {
+    width: 285px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimony-section .group .person-details p {
+    font-weight: 600;
+}
+
+.testimony-section .group .person-details p:last-child {
+    font-weight: normal;
+}
+
+.testimony-section .group .text {
+    flex: 8;
+}
+
+/*Section 4: Contact*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 140px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-family: "Poppins", sans-serif;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(.9);
+}
+
+@media (max-width: 850px) {
+    /*SECTION 1: hero*/
+    .hero-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    /*SECTION 1: hero*/
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+    }
+
+    /*SECTION 3: Testimony*/
+    .testimony-section {
+        text-align: center;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+    }
+
+    /*Section 4: Contact*/
+    .contact-section .group {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+    /*NAV BAR*/
+    nav {
+        padding: 0 20px; 
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+     nav .right a :last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+    /*section 1: hero*/
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    /*SECTION 2: Skills*/
+    .skills-section {
+        padding: 0 20px;
+    }
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+
+    /*SECTION 3: Testimony*/
+    .testimony-section {
+        padding: 0 20px;
+    }
+
+     /*Section 4: Contact*/
+    .contact-section {
+        padding: 0 20px;
+    }
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #1e90ff;
+}
+
+#darkModeToggle {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6); 
+}
+
+
+#darkModeToggle:focus {
+    outline: none;            
+    box-shadow: none;         
+}
+
+/*================ DARK MODE =================*/
+.dark-mode {
+    --background-color: #1e1e1e; 
+    --text-color: #dcdcdc;       
+    --link-color: #4da6ff;     
+}
+
+
+/* Body background & text */
+.dark-mode body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Links */
+.dark-mode a {
+    color: var(--link-color);
+}
+
+/* Navbar */
+.dark-mode nav .left a,
+.dark-mode nav .right a {
+    color: var(--text-color);
+}
+
+/* "Fake" button in navbar (last link) */
+.dark-mode nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
+
+/* Skills section cells */
+.dark-mode .skills-section .cells .cell {
+    background-color: #1a1a1a;
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+/* Contact form */
+.dark-mode .contact-section .group form input,
+.dark-mode .contact-section .group form textarea {
+    background-color: #1a1a1a;
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.dark-mode .contact-section .group form input::placeholder,
+.dark-mode .contact-section .group form textarea::placeholder {
+    color: #cccccc;
+}
+
+.dark-mode .contact-section .group form input:focus,
+.dark-mode .contact-section .group form textarea:focus {
+    outline-color: rgba(30, 144, 255, 0.7);
+}
+
+/* Contact button */
+.dark-mode .contact-section .group form button {
+    background-color: var(--link-color);
+    color: white;
+}
+
+/* Skills/Contact text */
+.dark-mode .skills-section .text,
+.dark-mode .contact-section .group .text {
+    color: var(--text-color);
+}
+
+/* Hero section text */
+.dark-mode .hero-section .text h2,
+.dark-mode .hero-section .text p,
+.dark-mode .hero-section .text .links a {
+    color: var(--text-color);
+}
+
+/* Hero buttons */
+.dark-mode .hero-section .text .links a {
+    border-color: var(--link-color);
+}
+
+.dark-mode .hero-section .text .links a:hover {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+/* Testimony section */
+.dark-mode .testimony-section h2,
+.dark-mode .testimony-section .group .text,
+.dark-mode .testimony-section .group .person-details p {
+    color: var(--text-color);
+}
+
+.dark-mode #darkModeToggle {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Dark mode form styling */
+.dark-mode .contact-section .group form input,
+.dark-mode .contact-section .group form textarea {
+    background-color: #2c2c2c;   
+    color: var(--text-color);   
+    border: 2px solid #555;     
+}
+
+/* Keep the button consistent with dark mode */
+.dark-mode .contact-section .group form button {
+    background-color: #4da6ff;  
+    color: #fff;              
+}
+
+
+
+

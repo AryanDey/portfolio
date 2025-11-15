@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" /> 
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>adey.com</title>
+    
+</head>
+<body>
+    <!-- Navbar Section -->
+     <nav>
+        <div class="left">
+            <a href="/">Aryan Dey</a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/AryanDey" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+        </a>
+
+        <a href="https://www.instagram.com/aryandey131011/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+        </a>
+
+        <a href="mailto:aryandey131011@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+        </a>
+
+        <button id="darkModeToggle">🌙</button>
+
+        </div>
+     </nav>
+
+     <main>
+        <!--SECTION 1: Hero-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Aryan 👋</h2>
+                <p>I am an aspiring software engineer currently in Year 8, with a growing interest in coding and web development. I have experience with HTML, CSS, and basic programming concepts, and I am eager to continue learning more advanced skills. My goal is to build a strong foundation in software engineering so I can take on more challenging projects in the future.</p>
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/hero-headshot.jpg" alt="Headshot of Aryan Dey">
+            </div>
+        </section>
+
+        <!--SECTION 2: Skills-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                I have experience with HTML and CSS for building and styling simple websites, and I'm currently expanding my skills by learning JavaScript. I'm also beginning to explore Node.js and React as I work toward building more dynamic and modern web applications. Along the way, I'm developing a solid understanding of web design principles, coding fundamentals, and responsive layouts as I grow toward becoming a software engineer.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+                
+            <div class="cell">
+                    <img src="images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+
+            <div class="cell">
+                    <img src="images/javascript-logo.webp" alt="javascript logo">
+                    <span>JavaScript</span>
+                </div>
+
+            <div class="cell">
+                    <img src="images/node-logo.webp" alt="node logo">
+                    <span>Node.js</span>
+                </div>
+
+            <div class="cell">
+                    <img src="images/react-logo.webp" alt="react logo">
+                    <span>React.js</span>
+                </div>
+        </section>
+ 
+        <!--SECTION 3: Testimony-->
+        <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-details">
+                    <img src="images/testimony-headshot.webp" alt="Ethan, Aryan's accomplice in Grok Web.Comp">
+                    <p>Ethan Geevarghese</p>
+                    <p>100% Recommend &lpar;He's amazing!&rpar;</p>
+                </div>
+                
+                <div class="text">
+                    “Working with Aryan in the Grok Web.Comp has been genuinely inspiring. He's always pushing himself to learn more, whether it's improving his HTML and CSS or diving into JavaScript, Node, and React. Even when we get stuck on a challenge, Aryan stays focused and figures out a solution instead of giving up. His dedication, creativity, and willingness to keep improving make him an awesome person, and I'm confident he's on his way to becoming a great software engineer.”
+                </div>
+            </div>
+         </section>
+        
+        <!--SECTION 4: Contact-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    If you’d like to reach out, collaborate, or learn more about my journey as an aspiring software engineer, feel free to get in touch. I’m always open to feedback, opportunities, and connecting with people who share similar interests. Your message is always welcome, and I’ll respond as soon as I can.
+                </div>
+
+            <form action="https://formspree.io/f/xjkjwqqw" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+
+            <!-- Google reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6LfqeQ0sAAAAANnXHZYrwd4k3F2aGlJOTvnK2N-w"></div>
+
+            <button type="submit">Send Message</button>
+            </form>
+
+        </section>
+
+     </main>
+     
+     <script src="script.js"></script>
+     <!-- Load reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
