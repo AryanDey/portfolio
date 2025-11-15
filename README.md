@@ -1,28 +1,29 @@
 # Aryan Dey Portfolio
 
-This repository contains the source code for my personal portfolio website, built with HTML, CSS, and JavaScript. It features sections for:
+Welcome to my personal portfolio! This website showcases my journey as an aspiring software engineer, my skills, and ways to get in touch.  
 
-- Hero / Introduction
-- Skills
-- Testimony
-- Contact (with Formspree integration and Google reCAPTCHA)
+## 🌐 Live Website
 
-## Live Site
+Check it out here: [https://aryandey.github.io/portfolio/](https://aryandey.github.io/portfolio/)
 
-You can view the live website here: [https://aryandey.github.io/portfolio/](https://aryandey.github.io/portfolio/)
+## 💻 Features
 
-## Features
+- **Hero Section:** A brief introduction with a friendly greeting.
+- **Skills Section:** My technical skills, including HTML, CSS, JavaScript, Node.js, and React.
+- **Testimony Section:** Testimonials from collaborators highlighting my dedication and creativity.
+- **Contact Section:** Contact form integrated with [Formspree](https://formspree.io/) and Google reCAPTCHA for spam protection.
+- **Dark Mode Toggle:** Switch between light and dark themes.
 
-- Responsive design for desktop and mobile
-- Dark mode toggle
-- Contact form with spam protection
-- Showcase of technical skills
-
-## Technologies Used
+## 📂 Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Formspree (contact form backend)
+- Formspree (for contact form)
 - Google reCAPTCHA
 
+## 📱 Responsive Design
+
+The website is fully responsive and works on desktop, tablet, and mobile devices.
+
+---
